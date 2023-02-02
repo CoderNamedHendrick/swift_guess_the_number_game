@@ -14,6 +14,10 @@
 		E30573B1298C2F4200F29457 /* Guess_the_number_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30573B0298C2F4200F29457 /* Guess_the_number_gameTests.swift */; };
 		E30573BB298C2F4200F29457 /* Guess_the_number_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30573BA298C2F4200F29457 /* Guess_the_number_gameUITests.swift */; };
 		E30573BD298C2F4200F29457 /* Guess_the_number_gameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30573BC298C2F4200F29457 /* Guess_the_number_gameUITestsLaunchTests.swift */; };
+		E30573CC298C2FD300F29457 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30573CB298C2FD300F29457 /* Game.swift */; };
+		E30573CE298C33D700F29457 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30573CD298C33D700F29457 /* GameTests.swift */; };
+		E30573D2298C4F7E00F29457 /* AppScaffold.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30573D1298C4F7D00F29457 /* AppScaffold.swift */; };
+		E30573D4298C600C00F29457 /* ScaffoldBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30573D3298C600C00F29457 /* ScaffoldBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		E30573B6298C2F4200F29457 /* Guess the number gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess the number gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30573BA298C2F4200F29457 /* Guess_the_number_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_the_number_gameUITests.swift; sourceTree = "<group>"; };
 		E30573BC298C2F4200F29457 /* Guess_the_number_gameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_the_number_gameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E30573CB298C2FD300F29457 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E30573CD298C33D700F29457 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		E30573D1298C4F7D00F29457 /* AppScaffold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScaffold.swift; sourceTree = "<group>"; };
+		E30573D3298C600C00F29457 /* ScaffoldBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffoldBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,9 @@
 		E305739E298C2F4000F29457 /* Guess the number game */ = {
 			isa = PBXGroup;
 			children = (
-				E305739F298C2F4000F29457 /* Guess_the_number_gameApp.swift */,
-				E30573A1298C2F4000F29457 /* ContentView.swift */,
-				E30573A3298C2F4200F29457 /* Assets.xcassets */,
-				E30573A5298C2F4200F29457 /* Preview Content */,
+				E30573D0298C4E8600F29457 /* Views */,
+				E30573CF298C4E6500F29457 /* App */,
+				E30573CA298C2FA200F29457 /* Models */,
 			);
 			path = "Guess the number game";
 			sourceTree = "<group>";
@@ -114,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E30573B0298C2F4200F29457 /* Guess_the_number_gameTests.swift */,
+				E30573CD298C33D700F29457 /* GameTests.swift */,
 			);
 			path = "Guess the number gameTests";
 			sourceTree = "<group>";
@@ -125,6 +133,34 @@
 				E30573BC298C2F4200F29457 /* Guess_the_number_gameUITestsLaunchTests.swift */,
 			);
 			path = "Guess the number gameUITests";
+			sourceTree = "<group>";
+		};
+		E30573CA298C2FA200F29457 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E30573CB298C2FD300F29457 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E30573CF298C4E6500F29457 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E305739F298C2F4000F29457 /* Guess_the_number_gameApp.swift */,
+				E30573A3298C2F4200F29457 /* Assets.xcassets */,
+				E30573A5298C2F4200F29457 /* Preview Content */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E30573D0298C4E8600F29457 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E30573A1298C2F4000F29457 /* ContentView.swift */,
+				E30573D1298C4F7D00F29457 /* AppScaffold.swift */,
+				E30573D3298C600C00F29457 /* ScaffoldBody.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30573D4298C600C00F29457 /* ScaffoldBody.swift in Sources */,
 				E30573A2298C2F4000F29457 /* ContentView.swift in Sources */,
+				E30573CC298C2FD300F29457 /* Game.swift in Sources */,
 				E30573A0298C2F4000F29457 /* Guess_the_number_gameApp.swift in Sources */,
+				E30573D2298C4F7E00F29457 /* AppScaffold.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30573B1298C2F4200F29457 /* Guess_the_number_gameTests.swift in Sources */,
+				E30573CE298C33D700F29457 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Guess the number game/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Guess the number game/App/Preview Content\"";
 				DEVELOPMENT_TEAM = QW87FGX966;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Guess the number game/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Guess the number game/App/Preview Content\"";
 				DEVELOPMENT_TEAM = QW87FGX966;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
