@@ -15,7 +15,6 @@ struct AppScaffold : View {
                 Spacer()
                 
                 Text("iOS Guess the number Game")
-                    .bold()
                     .font(.title2)
                     .multilineTextAlignment(.center)
                     .padding(EdgeInsets(top: CGFloat(12), leading: CGFloat(12), bottom: CGFloat(12), trailing: CGFloat(12)))

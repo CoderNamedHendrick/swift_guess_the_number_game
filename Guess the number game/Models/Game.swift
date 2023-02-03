@@ -22,7 +22,7 @@ struct Game {
     
     mutating func newGame(testValue: Int? = nil) {
         roundScore = 0;
-        guess = testValue ?? Int.random(in: 0...101)
+        guess = testValue ?? Int.random(in: 1...101)
     }
     
     mutating func reset(testValue: Int? = nil) {

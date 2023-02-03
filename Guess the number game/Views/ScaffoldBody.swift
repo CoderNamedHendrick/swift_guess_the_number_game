@@ -62,7 +62,7 @@ struct ScaffoldBody: View {
                     .frame(height: CGFloat(12))
                 
                 
-                Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                Button {
                     validation = validateInput(value: guessInput);
                     
                     if (validation == nil) {
@@ -72,11 +72,16 @@ struct ScaffoldBody: View {
                         }
                     }
                     
+                } label: {
+                    Text("Submit Guess").frame(maxWidth: .infinity)
+                        .padding(.horizontal, 18)
+                        .padding(.vertical, 12)
                 }
-                .padding(.horizontal, 28)
-                .padding(.vertical, 16)
-                .foregroundColor(Color.white)
                 .background(Color.blue)
+                
+                
+                .foregroundColor(Color.white)
+               
                 .cornerRadius(CGFloat(12))
 
                 
